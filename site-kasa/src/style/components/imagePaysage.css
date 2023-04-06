@@ -1,0 +1,23 @@
+.imagePaysage , h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.imagePaysage {
+    height: 170px;
+    background: center/cover;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 100;
+}
