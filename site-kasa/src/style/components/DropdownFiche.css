@@ -1,0 +1,35 @@
+.dropdownFiche
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 100;
+}
+.dropdownDescription{
+    width: 60%;
+
+}
+
+.dropdownEquipments{
+    width: 35%;
+}
+
+.dropdownEquipments ul ,.dropdownDescription p{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    background-color:#F7F7F7 ;
+    margin-top: 0px;
+    padding: 15px 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.dropdownEquipments li {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.dropdownDescription p {
+    line-height: 1.5em;
+}

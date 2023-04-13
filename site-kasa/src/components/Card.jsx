@@ -1,26 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import "../style/components/Card.css"
+import React from 'react';
+import "../style/components/Card.css";
+import { NavLink } from 'react-router-dom';
+import useLogements from '../Hooks/useLogements';
+
 
 const Card = () => {
-    const [donnees,setdonnees]=useState([])
-    
-    useEffect(() => {
-        axios.get('../data/logements.json')
-          .then(res => {
-            console.log(res.data);
-            setdonnees(res.data);
-          })
-          .catch(error => console.error(error));
-      }, []);
+    const {logements} = useLogements();
 
 
     return (
-        <div className='container'>
-            {donnees.map((logement) => 
-            <div className='fiche' style={{backgroundImage:  `url(${logement.cover})` }}> 
+        <div className='ficheLogement'>
+            {logements.map((logement) => 
+            <NavLink to={`/FicheLogement/${logement.id}`}>
+            <div className='fiche' key={logement.id} style={{backgroundImage:  `url(${logement.cover})` }}> 
             <div className='fondNoir'><h2>{logement.title}</h2> </div> 
-            </div> )}
+            </div>
+            </NavLink> )}
         </div>
     );
 };

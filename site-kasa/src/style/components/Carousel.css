@@ -1,0 +1,30 @@
+.carousel {
+    position: relative;
+  }
+
+  .carousel-image {
+    display: block;
+    height: 570px;
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .carousel-controls i {
+    font-size: 10rem;
+    cursor: pointer;
+    color: white;
+    padding: 0px 20px;
+  }

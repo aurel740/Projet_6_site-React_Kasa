@@ -1,5 +1,5 @@
   import './style/components/App.css';
-  import {BrowserRouter,Routes,Route} from "react-router-dom"
+  import {BrowserRouter,Routes,Route} from "react-router-dom";
   import React from 'react';
   import Home from './pages/Home';
   import About from './pages/About';
@@ -13,7 +13,7 @@
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
-      <Route path='/FicheLogement' element={<Fiche />} />
+      <Route path="/FicheLogement/:id" element={<Fiche/>} />
       <Route path='*' element={<Page404 />} />
     </Routes>
     </BrowserRouter>   
