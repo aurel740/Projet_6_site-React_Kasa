@@ -19,7 +19,7 @@ const Menudefilant = () => {
     return (
 
 <>
-<Dropdown data={menu} type={"title"} type1={'description'}/>
+<Dropdown key={menu.id} data={menu} type={"title"} type1={'description'}/>
 </>
     );
 };

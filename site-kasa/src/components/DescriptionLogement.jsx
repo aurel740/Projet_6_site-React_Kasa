@@ -1,10 +1,9 @@
 import React from 'react';
 import useLogements from '../Hooks/useLogements';
 import "../style/components/DescriptionLogement.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons'
 import Carousel from './Carousel';
 import DropdownFiche from './DropdownFiche';
+import Rating from './Rating';
 
 const DescriptionLogement = ({id}) => {
     const {getLogementById}=useLogements();
@@ -13,25 +12,6 @@ const DescriptionLogement = ({id}) => {
     if(!logement){
         return <div>Loading...</div>
     }
-
-    const Rating = ({rating}) => {
-        const maxRating = 5;
-        const fullStars = Math.floor(rating);
-        const emptyStars = maxRating - fullStars;
-        const fullStarElements = Array(fullStars).fill().map((_, i) => (
-          <FontAwesomeIcon icon={solidStar} key={i} className='start' />
-        ));
-        const emptyStarElements = Array(emptyStars).fill().map((_, i) => (
-            <FontAwesomeIcon icon={solidStar} key={i} className="fa-star gray start" />
-          ));
-    
-        return (
-            <div>
-                {fullStarElements}
-                {emptyStarElements}
-            </div>
-        );
-    };
 
     return (
         <section className='DescriptionLogement'>

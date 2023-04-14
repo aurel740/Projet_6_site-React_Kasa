@@ -3,10 +3,11 @@ import Banniere from '../components/Banniere';
 import ImagePaysage from '../components/ImagePaysage';
 import Menudefilant from '../components/Menudefilant';
 
+
 const About = () => {
 
     return (
-        <div>
+        <div className='corps'>
             <Banniere />
             <ImagePaysage />
             <Menudefilant />

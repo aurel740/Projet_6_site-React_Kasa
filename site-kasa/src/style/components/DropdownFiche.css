@@ -1,18 +1,6 @@
 .dropdownFiche
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    font-weight: 100;
-}
-.dropdownDescription{
-    width: 60%;
-
-}
-
-.dropdownEquipments{
-    width: 35%;
 }
 
 .dropdownEquipments ul ,.dropdownDescription p{

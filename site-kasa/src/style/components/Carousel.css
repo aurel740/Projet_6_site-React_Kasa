@@ -4,7 +4,6 @@
 
   .carousel-image {
     display: block;
-    height: 570px;
     width: 100%;
     margin: auto;
     object-fit: cover;
@@ -23,8 +22,6 @@
   }
   
   .carousel-controls i {
-    font-size: 10rem;
     cursor: pointer;
     color: white;
-    padding: 0px 20px;
   }

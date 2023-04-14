@@ -17,7 +17,7 @@ const Dropdown = ({ data,type,type1 }) => {
   };
 
   return (
-    <div className="dropdown">
+    <div className="dropdown menuDefilant">
       {data.map((item, index) => (
         <div key={item.id}>
           <div className="dropdown__title" onClick={() => toggleDropdown(index)}>

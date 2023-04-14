@@ -25,7 +25,7 @@ const DropdownFiche = ({ id }) => {
     <div className="dropdownFiche">
       <div className="dropdownDescription">
         <div className="dropdown__title" onClick={toggleDescription}>
-          <h3>description</h3>
+          <h3>Description</h3>
           <i className={`fas ${openDescription ? 'fa-chevron-up' : 'fa-chevron-down'}`} onClick={(e) => handleIconClick(e, toggleDescription)}></i>
         </div>
         {openDescription && <p>{logement.description}</p>}

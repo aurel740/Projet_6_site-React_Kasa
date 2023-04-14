@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 const Fiche = () => {
     const {id} = useParams();
     return (
-        <div>
+        <div className='corps'>
             <Banniere/>
             <DescriptionLogement id={id}/>
         </div>

@@ -3,6 +3,7 @@ import Banniere from '../components/Banniere';
 import { NavLink } from 'react-router-dom';
 import "../style/pages/Page404.css"
 
+
 const Page404 = () => {
 
     const Navigation = () => {
@@ -13,11 +14,13 @@ const Page404 = () => {
         );
     };
     return (
+
         <div className='Error404'>
             <Banniere />
             <span>404</span>
             <p>Oups! La page que vous demandez n'existe pas.</p>
             <Navigation />
+
         </div>
     );
 };

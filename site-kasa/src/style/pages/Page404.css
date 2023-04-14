@@ -1,20 +1,21 @@
 .Error404 {
     text-align: center;
+    margin-top: 60px;
 }
 
 .Error404 span {
-font-size: 300px;
+font-size: 15em;
 font-weight: 600;
 }
 
 .Error404 p {
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 100;
 }
 
 .lienRetour {
     text-decoration: underline;
-    text-underline-offset: #FF6060;
+    text-decoration-thickness: #FF6060;
     font-size: 15px;
     margin-top: 250px;
 }

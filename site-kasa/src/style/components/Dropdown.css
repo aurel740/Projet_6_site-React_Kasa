@@ -1,9 +1,7 @@
 .dropdown__title {
     display: flex;
-    height: 40px;
     color: white;
     background-color: #FF6060;
-    margin-top: 20px;
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
@@ -16,4 +14,9 @@ margin-top: 0px;
 padding: 15px 10px;
 border-radius: 0px 0px 15px 15px;
 line-height: 2em;
+}
+
+.menuDefilant {
+    max-width: 90%;
+    margin: auto;
 }

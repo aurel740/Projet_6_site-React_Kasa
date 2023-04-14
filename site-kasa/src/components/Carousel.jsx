@@ -23,10 +23,10 @@ const Carousel = ({ id }) => {
 
   return (
     <div className='carousel'>
-      <img src={logement.pictures[picture]} className='carousel-image' alt="" />
+      <img src={logement.pictures[picture]} className='carousel-image' alt={logement.title} />
       <div className='carousel-controls'>
-      <i class="fa-solid fa-angle-left" onClick={imagePrecedente}></i>
-      <i class="fa-solid fa-angle-right" onClick={imageSuivante}></i>
+      <i className="fa-solid fa-angle-left" onClick={imagePrecedente}></i>
+      <i className="fa-solid fa-angle-right" onClick={imageSuivante}></i>
       </div>
     </div>
   );
