@@ -101,6 +101,16 @@ footer {
 }
 .dropdown__title {
   margin-top: 25px;
+  font-size: 1.3em;
+}
+.dropdownEquipments ul li ,.dropdownDescription p{
+  font-size: 1.3em;
+}
+.tags {
+  font-size: 1.1em;
+}
+.count {
+  color: rgba(255, 255, 255, 0);
 }
 }
 
@@ -145,7 +155,7 @@ h2{
   padding: 0px 20px;
 }
 .carousel-image {
-  height: 570px;
+  height: 650px;
 }
 .ficheLogement {
   background-color: #F6F6F6;
@@ -155,12 +165,31 @@ h2{
   height: 600px;
 }
 .dropdown__title {
-  font-size: 1.5em;
+  font-size: 1.45em;
   height: 55px;
   margin-top: 30px;
 }
 .dropdown p {
   font-size: 1.5em;
+}
+.en-tete1 h2 {
+  margin-bottom: 3px;
+  margin-top: 0px;
+  font-size: 2.5em;
+}
+.en-tete1 h3 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+.tags {
+  font-size: 1.2em;
+}
+.dropdownEquipments ul li ,.dropdownDescription p{
+  font-size: 1.5em;
+}
+.count {
+  color: rgb(255, 255, 255);
 }
 }
 

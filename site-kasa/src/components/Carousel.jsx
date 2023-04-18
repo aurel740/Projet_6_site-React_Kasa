@@ -28,6 +28,7 @@ const Carousel = ({ id }) => {
       <i className="fa-solid fa-angle-left" onClick={imagePrecedente}></i>
       <i className="fa-solid fa-angle-right" onClick={imageSuivante}></i>
       </div>
+      <p className='count'>{picture + 1}/{logement.pictures.length}</p>
     </div>
   );
 };
