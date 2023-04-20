@@ -11,13 +11,19 @@
     margin-top: 0px;
     padding: 15px 10px;
     border-radius: 0px 0px 15px 15px;
+    height: 250px;
+    overflow-y: scroll;
 }
-
+.dropdownDescription p {
+    padding-top: 15px;
+    line-height: 1.5em;
+}
 .dropdownEquipments li {
     font-size: 15px;
     padding-top: 5px;
+    line-height: 1.3em;
 }
 
-.dropdownDescription p {
-    line-height: 1.5em;
+.dropdownEquipments ul {
+    padding-bottom: 20px;
 }

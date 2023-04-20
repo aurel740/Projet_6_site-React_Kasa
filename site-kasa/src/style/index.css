@@ -39,26 +39,29 @@ footer {
 }
 
 /* medias queries */
-@media screen and (max-width:950px) {
+@media screen and (max-width:1110px) {
   .ficheLogement{
       grid-template-columns: 1fr 1fr;
-  }
-  .rating {
-    margin-top: 20px;
-    }
-
-}
-
-@media screen and (min-width:950px) {
-  .ficheLogement{
-      grid-template-columns: 1fr 1fr 1fr;
   }
   .rating {
     margin-top: 25px;
     }
   
 }
+@media screen and (min-width:1110px){
+    .ficheLogement{
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width:950px) {
+  .rating {
+    margin-top: 20px;
+    }
+.dropdown__title h3{
+  font-size: 1em;
+}
 
+}
 @media screen and (max-width:769px) {
   .ficheLogement{
       grid-template-columns: 1fr;
@@ -103,6 +106,9 @@ footer {
   margin-top: 25px;
   font-size: 1.3em;
 }
+.dropdown p {
+  font-size: 1.25em;
+}
 .dropdownEquipments ul li ,.dropdownDescription p{
   font-size: 1.3em;
 }
@@ -113,7 +119,6 @@ footer {
   color: rgba(255, 255, 255, 0);
 }
 }
-
 @media screen and (min-width:769px) {
   .imagePaysage , h1 {
     justify-content: center;
@@ -192,7 +197,6 @@ h2{
   color: rgb(255, 255, 255);
 }
 }
-
 @media screen and (max-width:570px) {
   nav ul {
     flex-direction: column;
@@ -209,7 +213,6 @@ h2{
     margin-left: 20px;
   }
 }
-
 @media screen and (max-width:440px) {
   nav {
     flex-direction: column;
