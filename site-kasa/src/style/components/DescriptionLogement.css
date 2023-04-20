@@ -15,8 +15,10 @@
 .host {
     display: flex;
 }
-
-.en-tete1 h3 ,.en-tete1 h2 {
+.en-tete1 h2{
+font-weight: 400;
+}
+.en-tete1 h3 {
     font-weight: 200;
 }
 .en-tete {
