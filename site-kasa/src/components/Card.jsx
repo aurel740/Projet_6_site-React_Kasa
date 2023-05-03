@@ -3,7 +3,7 @@ import "../style/components/Card.css";
 import { NavLink } from 'react-router-dom';
 import useLogements from '../Hooks/useLogements';
 
-
+// carte des différent logement
 const Card = () => {
 const {logements} = useLogements();
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import useLogements from '../Hooks/useLogements';
 import "../style/components/DescriptionLogement.css";
@@ -5,11 +6,11 @@ import Carousel from './Carousel';
 import DropdownFiche from './DropdownFiche';
 import Rating from './Rating';
 
-const DescriptionLogement = ({id}) => {
-    const {getLogementById}=useLogements();
+const DescriptionLogement = ({ id }) => {
+    const {getLogementById,isLoading}=useLogements();
     const logement=getLogementById(id);
 
-    if(!logement){
+    if(isLoading){
         return <div>Loading...</div>
     }
 

@@ -7,10 +7,12 @@ const Carousel = ({ id }) => {
   const logement = getLogementById(id);
   const [picture, setPictures] = useState(0);
 
+  //si logement pas encore charger ,affiche Loading...
   if (!logement) {
     return <div>Loading...</div>
   }
 
+  //ex: picture=4 et logement.pictures.length=5 => (4+1)%5=0
   const imageSuivante = () => {
     const suivant = (picture + 1) % logement.pictures.length;
     setPictures(suivant);
