@@ -6,10 +6,12 @@
 }
 
 .fiche {
+    aspect-ratio: 1/1; /* Rapport d'aspect 1:1 pour un carré */
     border-radius: 20px;
     background-position: center;
     color: white;
-}
+  }
+  
 
 .fondNoir {    
     display: flex;

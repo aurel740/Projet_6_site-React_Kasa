@@ -22,14 +22,17 @@ const Carousel = ({ id }) => {
     const precedent = (picture - 1 + logement.pictures.length) % logement.pictures.length;
     setPictures(precedent);
   }
-
+  const afficherNavigation = logement.pictures.length > 1;
+  
   return (
     <div className='carousel'>
       <img src={logement.pictures[picture]} className='carousel-image' alt={logement.title} />
-      <div className='carousel-controls'>
-      <i className="fa-solid fa-angle-left" onClick={imagePrecedente}></i>
-      <i className="fa-solid fa-angle-right" onClick={imageSuivante}></i>
-      </div>
+      {afficherNavigation ? (
+        <div className='carousel-controls'>
+          <i className="fa-solid fa-angle-left" onClick={imagePrecedente}></i>
+          <i className="fa-solid fa-angle-right" onClick={imageSuivante}></i>
+        </div>
+      ) : null}
       <p className='count'>{picture + 1}/{logement.pictures.length}</p>
     </div>
   );

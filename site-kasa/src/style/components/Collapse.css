@@ -1,0 +1,26 @@
+.collapse__content p,.collapse__content ul{
+    background-color: #F6F6F6;
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+    }
+    .collapse__content li{
+      font-size: 1.2em;
+    }
+    .collapse__content p{
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+    .collapse__title {
+      display: flex;
+      color: white;
+      background-color: #FF6060;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 25px;
+  }
+  .collapse__title i:hover {
+    cursor: pointer;
+  }

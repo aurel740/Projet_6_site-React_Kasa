@@ -1,26 +1,33 @@
 import React, {useEffect,useState} from 'react';
-import axios from 'axios';
-import "../style/components/Menudefilant.css";
-import Dropdown from './Dropdown';
+import CollapseItem from './CollapseItem';
 
 
 const Menudefilant = () => {
     const [menu,setMenu]=useState([]);
     
     useEffect(() => {
-        axios.get('../data/descriptionAbout.json')
-          .then(res => {
-            setMenu(res.data);
-          })
-          .catch(error => console.error(error));
-      }, []);
+      fetch('../data/descriptionAbout.json')
+        .then(res => res.json())
+        .then(data => {
+          setMenu(data);
+        })
+        .catch(error => console.error(error));
+    }, []);
 
 
     return (
-
-<>
-<Dropdown key={menu.id} data={menu} type={"title"} type1={'description'}/>
-</>
+    <div className="menuDefilant">
+      {menu.map((item, index) => (
+        <CollapseItem
+        className="titreMenu"
+          key={item.id}
+          title={item.title}
+          content={<p>{item.description}</p>}
+          isOpen={false} 
+          toggleCollapse={() => {}}
+        />
+      ))}
+    </div>
     );
 };
 

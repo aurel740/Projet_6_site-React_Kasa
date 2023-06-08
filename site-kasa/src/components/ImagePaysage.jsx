@@ -7,6 +7,7 @@ const ImagePaysage = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const isAboutPage = window.location.pathname === '/about';
 
+  // écouter la taille de la fenêtre
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);

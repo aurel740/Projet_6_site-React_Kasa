@@ -20,6 +20,10 @@ a {
   text-decoration-color: #FF6060;
 }
 
+.ficheLogement{
+  margin-bottom: 20px;
+}
+
 footer {
   width: 100%;
   background-color: black;
@@ -30,6 +34,7 @@ footer {
   font-size: 20px;
   font-weight: 100;
   font-family: "Montserrat",sans-serif;
+  margin-bottom: -9px;
 }
 
 .imgFooter {
@@ -37,7 +42,29 @@ footer {
   height: 50px;
   margin-bottom: 20px;
 }
-
+/* .collapse__content p,.collapse__content ul{
+  background-color: #F6F6F6;
+  margin-top: 0px;
+  padding: 20px;
+  border-radius: 0px 0px 15px 15px;
+  }
+  .collapse__content li{
+    font-size: 1.2em;
+  }
+  .collapse__content p{
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .collapse__title {
+    display: flex;
+    color: white;
+    background-color: #FF6060;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 25px;
+} */
 /* medias queries */
 @media screen and (max-width:1110px) {
   .ficheLogement{
@@ -57,7 +84,7 @@ footer {
   .rating {
     margin-top: 20px;
     }
-.dropdown__title h3{
+.collapse__title h3{
   font-size: 1em;
 }
 
@@ -82,15 +109,12 @@ footer {
   .description {
     flex-direction: column;
 }
+.infoLogement {
+  flex-direction: column;
+}
 .start {
   margin-right: 0.5em;
   font-size: 17px;
-}
-.dropdownFiche
-{
-    flex-direction: column;
-    width: 100%;
-    font-weight: 100;
 }
 .carousel-controls i {
   font-size: 4rem;
@@ -99,18 +123,13 @@ footer {
 .carousel-image {
   height: 470px;
 }
-.fiche {
-  height: 500px;
-}
-.dropdown__title {
+
+.collapse__title {
   margin-top: 25px;
   font-size: 1.3em;
 }
-.dropdown p {
-  font-size: 1.25em;
-}
-.dropdownEquipments ul li ,.dropdownDescription p{
-  font-size: 1.3em;
+.collapseEquipments{
+margin-top: 50px;
 }
 .tags {
   font-size: 1.1em;
@@ -130,24 +149,15 @@ footer {
   flex-direction: column;
   align-items: flex-end;
 }
-.description{
-  flex-direction: row;
+.infoLogement {
   justify-content: space-between;
-  margin-top: 20px;
 }
-.dropdownFiche
-{
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    font-weight: 100;
+.collapseContainer{
+  display: flex;
+  justify-content: space-between;
 }
-.dropdownDescription{
-  width: 60%;
-}
-
-.dropdownEquipments{
-  width: 35%;
+.collapseDescription, .collapseEquipments {
+  width: 48%;
 }
 h2{
   margin-right: 50px;
@@ -166,17 +176,16 @@ h2{
   background-color: #F6F6F6;
   padding: 50px;
 }
-.fiche {
-  height: 600px;
-}
-.dropdown__title {
+
+.collapse__title {
   font-size: 1.45em;
   height: 55px;
   margin-top: 30px;
 }
-.dropdown p {
+.collapse p {
   font-size: 1.5em;
 }
+
 .titreLogement h2 {
   margin-bottom: 3px;
   margin-top: 0px;
@@ -190,9 +199,7 @@ h2{
 .tags {
   font-size: 1.2em;
 }
-.dropdownEquipments ul li ,.dropdownDescription p{
-  font-size: 1.5em;
-}
+
 .count {
   color: rgb(255, 255, 255);
 }
