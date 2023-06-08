@@ -27,7 +27,7 @@ const ImagePaysage = () => {
   }, [isAboutPage, windowWidth]);
 
   return (
-    <div className='imagePaysage' alt='photo paysage' style={{backgroundImage:  `url(${imgFond})`}}> 
+    <div className='imagePaysage' alt='photo paysage' style={{backgroundImage: `url(${imgFond})`}}> 
       <h1 style={{ whiteSpace: "pre-wrap" }}>{text}</h1>
     </div>
   );

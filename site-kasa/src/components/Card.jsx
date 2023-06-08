@@ -12,7 +12,7 @@ const {logements} = useLogements();
         <div className='ficheLogement'>
             {logements.map((logement) => 
             <NavLink to={`/FicheLogement/${logement.id}`} key={logement.id}>
-            <div className='fiche' key={logement.id} style={{backgroundImage:  `url(${logement.cover})` }}> 
+            <div className='fiche' key={logement.id} style={{backgroundImage: `url(${logement.cover})` }}> 
             <div className='fondNoir'><h2>{logement.title}</h2> </div> 
             </div>
             </NavLink> )}

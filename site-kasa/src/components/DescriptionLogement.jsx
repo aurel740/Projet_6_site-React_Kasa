@@ -10,6 +10,7 @@ const DescriptionLogement = ({ id }) => {
     const {getLogementById,isLoading}=useLogements();
     const logement=getLogementById(id);
 
+    //le temps d'avoir la fiche logement qui s'affiche
     if(isLoading){
         return <div>Loading...</div>
     }
@@ -17,8 +18,8 @@ const DescriptionLogement = ({ id }) => {
     return (
         <section className='DescriptionLogement'>
             <Carousel id={id}/>
-            <div className='en-tete'>
-            <div className='en-tete1'>
+            <div className='description'>
+            <div className='titreLogement'>
             <h2>{logement.title}</h2>
             <h3>{logement.location}</h3>
             <div className="tags">

@@ -79,7 +79,7 @@ footer {
     align-items: center;
     margin-top: 10px;
   }
-  .en-tete {
+  .description {
     flex-direction: column;
 }
 .start {
@@ -130,7 +130,7 @@ footer {
   flex-direction: column;
   align-items: flex-end;
 }
-.en-tete {
+.description{
   flex-direction: row;
   justify-content: space-between;
   margin-top: 20px;
@@ -177,12 +177,12 @@ h2{
 .dropdown p {
   font-size: 1.5em;
 }
-.en-tete1 h2 {
+.titreLogement h2 {
   margin-bottom: 3px;
   margin-top: 0px;
   font-size: 2.5em;
 }
-.en-tete1 h3 {
+.titreLogement h3 {
   margin-top: 0px;
   margin-bottom: 30px;
   font-size: 1.8em;
